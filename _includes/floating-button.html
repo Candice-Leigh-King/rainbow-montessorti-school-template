@@ -1,0 +1,30 @@
+<style>
+    #content-blocks-{{forloop.index0}} .call-button
+    {
+    background-color: {{item.colors.button-color}};
+    border-radius: {{item.border-radius.radius}};
+    border: 2px solid {{item.colors.button-color}};
+    color: {{item.colors.button-text-color}};
+    font-family: {{item.fonts.button-font}};    
+    }
+
+    #content-blocks-{{forloop.index0}} .call-button:hover
+    {
+    border: 2px solid {{item.colors.button-text-hover-color}};
+    background-color: {{item.colors.button-hover-color}};
+    color: {{item.colors.button-text-hover-color}}    
+    } 
+
+    #content-blocks-{{forloop.index0}} a:hover
+    {
+    color: {{item.colors.button-text-hover-color}}    
+    } 
+
+</style>
+<section class="" id="content-blocks-{{forloop.index0}}" style="z-index: 100;">
+  <section class="grid-center ">
+    <div class=" call-button  centered">
+     <a href="{{item.button-link}}">{{item.button-name}}</a>
+    </div>
+  </section>
+</section>
