@@ -149,7 +149,18 @@ font-family: 'Shrikhand', cursive;*/
   min-height: 101vh;
   }
 
-
+/* ---CALL BUTTON--- */
+ .call-button
+ {
+  padding: 5px 10px;
+  background-color: #CE967A;
+  border-radius: 100px;
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  margin-top: 2%;
+  position: fixed;
+  z-index: 10;
+  }
 
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
 
@@ -1026,6 +1037,9 @@ footer {
     top: 25px;
     font-size: 2.2rem;
    }
+
+   .call-button
+   {margin-top: 8%;}
 
   .mobile-menu 
     {
