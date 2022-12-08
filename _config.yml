@@ -43,6 +43,21 @@ page_blocks: []
 _array_structures:
   content-blocks:
     values:
+      - label: Floating Button
+        icon: radio_button_checked
+        value:
+          _section-type: floating-button
+          button-name: 
+          button-link:
+          colors:
+            button-color: 
+            button-hover-color: 
+            button-text-color: 
+            button-text-hover-color:
+          fonts:
+            button-font: 
+          border-radius:  
+            radius:
       - label: Floating Socials
         icon: groups
         value: 
