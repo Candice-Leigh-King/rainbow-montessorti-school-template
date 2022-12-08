@@ -152,6 +152,8 @@ font-family: 'Shrikhand', cursive;*/
 /* ---CALL BUTTON--- */
  .call-button
  {
+  top: 0%;
+  right: 45%;
   padding: 5px 10px;
   background-color: #CE967A;
   border-radius: 100px;
