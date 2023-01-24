@@ -1,7 +1,8 @@
 textarea_html: >-
   <p><a href="/blog-categories/blogs">programs</a></p><p><a href="/#about">about
   us</a></p><p><a href="/#reviews">reviews</a></p><p><a
-  href="/gallery.html">gallery</a></p><p><a href="/#contact">contact</a></p>
+  href="/gallery.html">gallery</a></p><p><a href="/locations.html">our
+  locations</a></p><p><a href="/#contact">contact</a></p>
 colors:
   hamburger-color: '#ffffff'
   background-color: '#859f9f'
