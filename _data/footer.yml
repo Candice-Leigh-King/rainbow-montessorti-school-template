@@ -1,7 +1,7 @@
 colors:
   background-color: '#ffffff'
-  border-color: '#d7d1ca'
-  social-icons-background-color: '#d7d1ca'
+  border-color: '#859f9f'
+  social-icons-background-color: '#859f9f'
   subfooter-hover-color: '#859f9f'
 fonts:
   subfooter-font: Raleway, sans-serif
