@@ -1,0 +1,21 @@
+# This repo is a Jekyll project whose *compiled output* is committed to git in
+# _site/. Netlify publishes that folder as-is; it does not run Jekyll.
+#
+# The build command is pinned here (instead of being left blank in the UI) so a
+# `jekyll build` can't be reintroduced by accident. A plain Jekyll build cannot
+# succeed on this repo as it stands: _config.yml assigns the layouts
+# "product-pages" and "affiliates", and neither exists in _layouts/.
+#
+# Consequence to remember: editing _includes/ or a page's front matter alone
+# does NOT change the live site. The matching file under _site/ must be
+# updated too, or the change will never reach the browser.
+
+[build]
+  publish = "_site"
+  command = "echo 'No build step: publishing the prebuilt _site directory as committed.'"
+
+# Required for the contact form. Its action is "/success", and pretty URLs are
+# what make _site/success.html answer at that path. Turning this off would make
+# the form's redirect 404.
+[build.processing.html]
+  pretty_urls = true
