@@ -1,0 +1,111 @@
+source: ''
+paths:
+  static: ''
+  uploads: uploads
+  uploads_use_relative_path: false
+  dam_uploads: ''
+  dam_static: ''
+  data: _data
+  collections: ''
+  layouts: _layouts
+collections_config:
+  data:
+    path: _data
+    output: false
+    auto_discovered: true
+  posts:
+    auto_discovered: true
+    path: _posts
+    output: true
+    permalink: /:categories/:year/:month/:day/:title:output_ext
+    create:
+      path: '[relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]'
+  pages:
+    path: ''
+    output: true
+    filter: strict
+    auto_discovered: true
+  drafts:
+    auto_discovered: true
+    path: _drafts
+    output: true
+    permalink: /:categories/:year/:month/:day/:title:output_ext
+    create:
+      publish_to: posts
+    name: Drafts
+    icon: event
+    singular_name: Draft
+collection_groups:
+_enabled_editors:
+_inputs:
+  textarea_html:
+    options:
+      blockquote: true
+      bold: true
+      format: p h1 h2 h3 h4 h5 h6
+      italic: true
+      strike: true
+      underline: true
+      link: true
+      bulletedlist: true
+      numberedlist: true
+      horizontalrule: true
+      styles: /custom-styles.css
+      left: left
+      center: center
+      right: right
+  content-block-link:
+    comment: If you would like this section to be linked through the navigation,
+      then you'll need to add an ID. The ID can be added in the below box. Your
+      ID is 1 word describing the section it is leading to. For example - about.
+      For more detailed instructions on how to link your pages and content
+      blocks to the navigation, please visit our YouTube tutorial here -
+      https://www.youtube.com/watch?v=odzPwMfEaxU. If you don't want this
+      section to link from the navigation, you can simply leave it out.
+  colors.subheading-mobile-color:
+    comment: This subheading color is for the mobile version only. To change the
+      subheading color on the laptop and desktop version, change the "hover text
+      color". This will also change the color of the text.
+  colors.on-mobile-text-color:
+    comment: This is to change the color of the text on mobile only.
+  insert-script-here:
+    comment: To change the styles here, change them in your email marketing settings
+      then copy and paste the script here again.
+  categories:
+    type: multiselect
+    options:
+      allow_create: true
+  tags:
+    type: multiselect
+    options:
+      allow_create: true
+_select_data:
+  fonts:
+    - Cyrene
+    - La Obrige
+    - Lineal Simples
+    - Maglony
+    - Mak
+    - Misto
+    - Brushwell
+    - Open Sans, sans-serif
+    - Shrikhand, cursive
+    - Dream Avenue
+    - Amatic SC, cursive
+    - Barlow Condensed, sans-serif
+    - Belleza, sans-serif
+    - Kaushan Script, cursive
+    - Montserrat, sans-serif
+    - Oooh Baby, cursive
+    - Playfair Display, serif
+    - Poppins, sans-serif
+    - Quicksand, sans-serif
+    - Raleway, sans-serif
+    - Roboto, sans-serif
+_structures: {}
+_editables: {}
+commit_templates: []
+base_url: ''
+editor:
+source_editor:
+timezone: Etc/UTC
